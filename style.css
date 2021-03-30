@@ -13,7 +13,7 @@ li {
     margin: 0px;
     text-align: center;
     display: block;
-    width: 1078px;
+    width: auto;
   }
 
   header {
@@ -46,4 +46,13 @@ li {
     height: 50%;
 
   }
+  form {
+    position: relative;
+    top:50px;
 
+  }
+  h2 {
+    position: relative;
+    top:50px;
+  }
+   
