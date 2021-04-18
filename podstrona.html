@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>lab2</title>
   <script src="js/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Zen+Dots&display=swap" rel="stylesheet">
   <script src="js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
@@ -19,12 +21,16 @@
     }
 
     body {
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Zen Dots', cursive;
+      font-size:18px; color:#ffffff; 
       color: #ffffff;
       background-color: #000000;
       margin: 0px;
       text-align: center;
       display: block;
-      width: 1078px;
+      width: auto;
+      height: auto;
     }
 
     header {
@@ -62,13 +68,16 @@
     .row{
         align-items: center;
     }
+    .navbar-collapse .glyphicon {
+    color: #ff0000;
+  } 
 
   
 
 
 
   </style>
-
+</head>
 <body>
 
   <div id=”container”>
@@ -97,33 +106,33 @@
     </section>
  
 
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target="#navbar-collapse-1" ariaexpanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-              <div id=”logo”>
-                <img src=logoimg.png alt=””>
-              </div>
-            </a>
-          </div>
-          <div class="collapse navbar-collapse" id="navbar-collapse-1">
-            <ul class="nav navbar-nav ms-auto">
-              <li class="active"><a href=index.html title="Strona główna">Strona główna</a></li>
-              <li><a href=podstrona.html title="Podstrona">Podstrona</a></li>
-              <li><a title="Patroni medialni">Patroni medialni</a></li>
-              <li><a title="Kontakt">Kontakt</a></li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#navbar-collapse-1" ariaexpanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <div id=”logo”>
+              <img src=logoimg.png alt=””>
+            </div>
+          </a>
         </div>
-      </nav>
-
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav ms-auto">
+            <li class=”btn btn-primary”><a href=index.html title="Strona główna"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Strona główna</a></li>
+            <li class="active"  class=”btn btn-primary”><a href=podstrona.html title="Podstrona"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Podstrona</a></li>
+            <li class=”btn btn-primary”><a href=formularz.html title="Formularz zgłoszeniowy"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Formularz zgłoszeniowy</a></li>
+            <li class=”btn btn-primary”><a title="Patroni medialni"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Patroni medialni</a></li>
+            <li class=”btn btn-primary”><a title="Kontakt"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> Kontakt </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
  
     <footer>
