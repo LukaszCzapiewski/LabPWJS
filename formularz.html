@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Formularz</title>
+        <script src="js/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Zen+Dots&display=swap" rel="stylesheet">
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <script src="forms.js"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+<body>
+
+    <h2>Formularz zgłoszeniowy</h2>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#navbar-collapse-1" ariaexpanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <div id=”logo”>
+                <img src=logoimg.png alt=””>
+              </div>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav ms-auto">
+              <li class=”btn btn-primary”><a href=index.html title="Strona główna"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Strona główna</a></li>
+              <li class=”btn btn-primary”><a href=podstrona.html title="Podstrona"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Podstrona</a></li>
+              <li class="active"  class=”btn btn-primary”><a href=formularz.html title="Formularz zgłoszeniowy"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Formularz zgłoszeniowy</a></li>
+              <li class=”btn btn-primary”><a title="Patroni medialni"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Patroni medialni</a></li>
+              <li class=”btn btn-primary”><a title="Kontakt"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> Kontakt </a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <form action="index.html#formularz" method="post" onsubmit="return checkForm();">
+        <input type="text" onblur="checkFormInput()" id="name" name="name" class="form-control" placeholder="Imię">
+        <p id="blad1" class="d-none">Podaj imie</p>
+        <label for="name">Imię</label>
+        <input type="text" id="surname" name="surname" class="form-control" placeholder="Nazwisko">
+        <p id="blad2" class="d-none">Podaj nazwisko</p>
+        <label for="surname" class="">Nazwisko</label>
+        <input type="text" id="email" name="email" class="form-control" placeholder="Email">
+        <p id="blad4"></p>
+        <label for="email" class="">Email</label>
+        <textarea type="text" id="info" name="info" rows="2" class="form-control md-textarea" maxlength="250"
+            placeholder="Treść informacji - max. 250 znaków"></textarea>
+        <p id="blad3" class="d-none">Podaj informacje</p>
+        <label for="info">Informacje</label>
+
+        <input onclick="checkFormInput();" type="submit" value="Wyślij" />
+    </form>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

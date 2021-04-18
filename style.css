@@ -6,14 +6,19 @@ li {
     float: center;
 
   }
+ 
 
   body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Zen Dots', cursive;
+    font-size:18px; color:#ffffff; 
+    background:#000000;
     color: #ffffff;
     background-color: #000000;
     margin: 0px;
     text-align: center;
     display: block;
-    width: 1078px;
+    width: auto;
   }
 
   header {
@@ -46,4 +51,26 @@ li {
     height: 50%;
 
   }
+  form {
+    position: relative;
+    top:50px;
 
+  }
+  h2 {
+    position: relative;
+    top:50px;
+  }
+  h1 {
+    color:red;
+  }
+  p{
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .navbar-collapse .glyphicon {
+    color: #ff0000;
+  } 
+  #angular img {
+    width: 75%;
+    height: 75%;
+  }
